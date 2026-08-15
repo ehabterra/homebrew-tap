@@ -1,5 +1,6 @@
 # Homebrew formula for apispec: installs the pre-built release binary, so
-# `brew install` needs no Go toolchain.
+# `brew install` compiles nothing. Go is still a RUNTIME dependency (below):
+# apispec shells out to `go list` and cannot analyse anything without it.
 #
 # packaging/homebrew/apispec.rb.tmpl is the SOURCE; apispec.rb is it rendered at
 # the current release. .github/workflows/release.yml renders the template with
@@ -18,23 +19,23 @@ class Apispec < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.6/apispec-darwin-arm64"
-      sha256 "04f9e3a6abc957bc8300c0f0225084c68f609cb1225d751e5d81a373c870414c"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.7/apispec-darwin-arm64"
+      sha256 "06e6fc5cfab3aceba2caa9b1b2af1406b2508865591461051061cf92fa494818"
     end
     on_intel do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.6/apispec-darwin-amd64"
-      sha256 "245ff783ee542f077dd944eb79f9cdb8e3206795970ef37493d29d308b301f80"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.7/apispec-darwin-amd64"
+      sha256 "3fd89262c268b73f5324bae39a685655db6d55a62be696ae939e3e8b2caccdc6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.6/apispec-linux-arm64"
-      sha256 "31af9982727b85f6ab60dbf178d00dca03be6a6763527e63c9a29eea34556bfc"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.7/apispec-linux-arm64"
+      sha256 "a6debf6df3ae997a075f46e25ffd532a9bb0c3b1782267fdcc47315b7f326350"
     end
     on_intel do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.6/apispec-linux-amd64"
-      sha256 "f7ad52b8d1e19ca9499e41d1d5394a5ea24649dd4f0658daac28e1e60c5dd1c2"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.7/apispec-linux-amd64"
+      sha256 "d57a4ee00fd695d01fcffc19cc84e0c26f45c5b146c76ad58ee0c47724d3fa90"
     end
   end
 
