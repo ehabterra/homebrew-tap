@@ -61,23 +61,23 @@ class Apispecui < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.10/apispecui-darwin-arm64"
-      sha256 "3442454d27fd18dda8d61c78d2731de0a23b512eaf6b0848cad9df97c5abd6d3"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.11/apispecui-darwin-arm64"
+      sha256 "84c58157142ffc6447b71c52732a3c3fb2652578b0714e7d7fe791e2a6a7602b"
     end
     on_intel do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.10/apispecui-darwin-amd64"
-      sha256 "55c312306484bbd793cc75a27f12a911e8839e0345e44ecee86b28388b7df964"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.11/apispecui-darwin-amd64"
+      sha256 "ecdec82cbd577e783a2bf230bfe8b5a6b50f261a9346bb1af8bca43134a1f726"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.10/apispecui-linux-arm64"
-      sha256 "3c7f51e783f8f18a99f320bc0557f62fbc7e9e978a72aaef4bb7ca9315601ea4"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.11/apispecui-linux-arm64"
+      sha256 "26f21019230dfc5e14a696041fb4b9985b22ee3dad55be0ebfba6448f705f940"
     end
     on_intel do
-      url "https://github.com/ehabterra/apispec/releases/download/v0.5.10/apispecui-linux-amd64"
-      sha256 "9b861cea757495a111d04a562a5b7f5dfa33cc47878638aab180a243fa45159d"
+      url "https://github.com/ehabterra/apispec/releases/download/v0.5.11/apispecui-linux-amd64"
+      sha256 "94487c3db96eea7b7a2db71e55712ea6650b68e877131dac33d51b3433496f2d"
     end
   end
 
